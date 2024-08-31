@@ -1,12 +1,14 @@
 import Project from '../models/Project.model.js';
 
 export const projectController = async(req, res) => {
-  const { name, profilePic, code } = req.body;
+  const { name, profilePic, code, language, type } = req.body;
 
   const newProject = new Project({
     name,
     profilePic,
-    code
+    code,
+    language,
+    type
   }); 
 
   try {

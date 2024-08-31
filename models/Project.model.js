@@ -5,6 +5,14 @@ const projectSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  language: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    required: true
+  },
   profilePic: {
     type: String,
     required: true,
