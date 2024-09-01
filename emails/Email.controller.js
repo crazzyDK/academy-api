@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 import Mailgen from 'mailgen';
+// import transporter from '../config/nodeMailer.js';
 
 export const RegisterMail = (req, res) => {
   const { email, name } = req.body;
